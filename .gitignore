@@ -1,0 +1,56 @@
+.DS_Store
+
+# Binaries for programs and plugins
+/backend/*.exe
+/backend/*.exe~
+/backend/*.dll
+/backend/*.so
+/backend/*.dylib
+
+# Test binary, built with `go test -c`
+/backend/*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+/backend/*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+/backend/go.work
+/backend/go.work.sum
+
+# env file
+/backend/.env
+/frontend/movielog/.env
+
+# Logs
+/frontend/movielog/logs
+/frontend/movielog/*.log
+/frontend/movielog/npm-debug.log*
+/frontend/movielog/yarn-debug.log*
+/frontend/movielog/yarn-error.log*
+/frontend/movielog/pnpm-debug.log*
+/frontend/movielog/lerna-debug.log*
+
+/frontend/movielog/node_modules
+/frontend/movielog/.DS_Store
+/frontend/movielog/dist
+/frontend/movielog/dist-ssr
+/frontend/movielog/coverage
+/frontend/movielog/*.local
+
+/frontend/movielog/cypress/videos/
+/frontend/movielog/cypress/screenshots/
+
+# Editor directories and files
+/frontend/movielog/.vscode/*
+/frontend/movielog/!.vscode/extensions.json
+/frontend/movielog/.idea
+/frontend/movielog/*.suo
+/frontend/movielog/*.ntvs*
+/frontend/movielog/*.njsproj
+/frontend/movielog/*.sln
+/frontend/movielog/*.sw?
+
+/frontend/movielog/*.tsbuildinfo
