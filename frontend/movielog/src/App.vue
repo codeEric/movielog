@@ -1,6 +1,6 @@
 <template>
   <div class="bg-background text-text-main h-screen w-screen flex">
-    <main class="my-4 mx-8 w-full">
+    <main class="pt-6 px-18 w-full h-full flex flex-col">
       <TopbarMenu />
       <RouterView />
     </main>
