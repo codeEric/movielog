@@ -1,15 +1,52 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+body {
+    height: 100vh;
+    background-color: var(--color-background);
+}
+
+#app {
+    height: 100%;
+}
 
 @theme {
-    --color-background: #1A1A1A;
-    --color-primary: #D4A373;
-    --color-secondary: #A26769;
-    --color-text-main: #F5F5F5;
-    --color-text-muted: #B0A8B9;
+    --color-background: #1a1a1a;
+    --color-primary: #d4a373;
+    --color-secondary: #a26769;
+    --color-text-main: #f5f5f5;
+    --color-text-muted: #b0a8b9;
     --color-surface: #262626;
-    --color-light-surface: #2E2E2E;
-    --color-separation: #3D3D3D;
-    --color-gold: #FFD369;
-    --color-forest-green: #6A994E;
+    --color-light-surface: #2e2e2e;
+    --color-separation: #3d3d3d;
+    --color-gold: #ffd369;
+    --color-forest-green: #6a994e;
 
+    --animate-bounce-left: bounce-left 0.5s ease-out infinite;
+    --animate-bounce-right: bounce-right 0.5s ease-out infinite;
+
+    @keyframes bounce-left {
+
+        0%,
+        100% {
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: translateX(-5%);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    @keyframes bounce-right {
+
+        0%,
+        100% {
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: translateX(5%);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
 }

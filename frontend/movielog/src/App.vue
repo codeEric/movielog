@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-background text-text-main h-screen w-screen flex">
+  <div class="text-text-main h-full w-full flex">
     <main class="pt-6 px-18 w-full h-full flex flex-col">
       <TopbarMenu />
       <RouterView />
